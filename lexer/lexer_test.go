@@ -6,7 +6,7 @@ import (
 )
 
 func TestNextToken(t *testing.T) {
-input := `
+	input := `
 let five = 5;
 let ten = 10;
 
@@ -105,7 +105,7 @@ let result = add(five, ten);
 		{token.NOT_EQ, "!="},
 		{token.INT, "9"},
 		{token.SEMICOLON, ";"},
-		{token.EOF, ""},	}
+		{token.EOF, ""}}
 
 	lexer := New(input)
 
